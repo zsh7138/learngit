@@ -1,4 +1,4 @@
-/*for windows*/ 感谢廖雪峰老师~
+/*for windows*/ 感谢廖雪峰老师~!
 
 $ git config --global user.name "Your Name"
 初始化名字
