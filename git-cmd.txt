@@ -1,4 +1,4 @@
-/*for windows*/
+/*for windows*/ 感谢廖雪峰老师~
 
 $ git config --global user.name "Your Name"
 初始化名字
@@ -44,6 +44,44 @@ discard工作区的修改  "--"很重要  /* 没有"--"就表示切换到另一�
 
 $ git reset HEAD somefile
 丢弃暂存区的修改,此时的版本状态是工作区当前的版本.当然master上的内容是独立的
+
+$ git rm somefile
+从版本库删除文件.  误删,可用 git checkout --somefile恢复   另,$ rm somefile 删除的是工作区的文件
+
+$ ssh-keygen -t rsa -C "youremail@example.com"
+生成无需密码的public key  C:\users\administrator\.ssh\id_rsa.pub
+
+$ git remote add origin git@github.com:(github用户名)/(远程库名).git
+在已有的本地仓库下,关联远程库  origin是GitHub默认的库名,可修改
+
+$ git push -u origin master 
+本地库推送至远程库. 第一次要加上 -u   
+
+$ git clone git@github.com:(用户名)/(库).git
+克隆一个库至本地
+
+$ git checkout -b somebranch
+创建一个新的分支,并切换至新分支.  相当于:  $ git branch somebranch和 $ git checkout somebranch  两条命令
+
+$ git merge somebranch 
+将somebranch 分支合并到当前分支
+
+$ git branch -d somebranch
+删除分支
+
+$ git merge --no-ff somebranch
+合并分支时 加上 --no-ff 用普通模式合并,合并后的历史有分支
+
+$ git log --graph 
+查看分支合并历史
+
+
+
+
+
+
+
+
 
 
 
