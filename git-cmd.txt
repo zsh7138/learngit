@@ -1,0 +1,11 @@
+/*for windows*/
+
+$ git config --global user.name "Your Name"
+初始化名字
+
+$ git config --global user.email "email@example.com"
+初始化email地址
+
+$ git init
+选择一个目录输入此命令. 将当前目录作为版本库,将会创建 (.git)文件夹   /*目录名及父级目录名不包含中文*/
+
