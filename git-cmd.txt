@@ -9,3 +9,41 @@ $ git config --global user.email "email@example.com"
 $ git init
 选择一个目录输入此命令. 将当前目录作为版本库,将会创建 (.git)文件夹   /*目录名及父级目录名不包含中文*/
 
+$ git add somfile
+将 somefile(文件名)添加到 暂存区
+
+$ git commit -m "some description"
+将暂存区的内容提交到master分支
+
+$ git status 
+查看工作区状态 
+
+$ git diff 
+查看工作区内容的difference
+
+$ git log / git log --pretty=oneline
+前者查看版本历史(有时间),后者是更为简洁的历史记录
+
+$ git reset --hard head^ 
+版本回退.一个"^" 表示一个版本,两个表示回退两个版本
+
+$ cat somefile
+查看当前文档的内容
+
+$ git reset --hard (版本号)
+回退至指定版本
+
+$ git reflog
+查看每一次命令记录(命令编号)
+
+$ git diff HEAD -- somefile
+查看工作区当前和版本库里(master) 文档的区别.
+
+$ git checkout -- somefile
+discard工作区的修改  "--"很重要  /* 没有"--"就表示切换到另一分支*/
+
+$ git reset HEAD somefile
+丢弃暂存区的修改,此时的版本状态是工作区当前的版本.当然master上的内容是独立的
+
+
+
